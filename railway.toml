@@ -1,0 +1,20 @@
+# railway.toml - Configuration for Railway deployments
+
+[build]
+# This builder configuration ensures we don't use Docker
+builder = "nixpacks"
+watchPatterns = ["app/**/*.rb", "config/**/*.rb", "db/**/*.rb", "lib/**/*.rb", "app/javascript/**/*"]
+
+[deploy]
+# Force new deployment for each push by using a timestamp
+releasephase = "POSTGRES_STATEMENT_TIMEOUT=600s bundle exec rails db:chatwoot_prepare && echo $(date +%s) > .force_deploy"
+numReplicas = 1
+restartPolicyType = "on_failure"
+
+[deploy.web]
+cmd = "bin/rails server -p $PORT -e $RAILS_ENV"
+helthcheckPath = "/health_check"
+helathcheckTimeout = 300
+
+[deploy.worker]
+cmd = "bundle exec sidekiq -C config/sidekiq.yml"

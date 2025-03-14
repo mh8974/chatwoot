@@ -1,0 +1,15 @@
+{
+  "name": "simple-chatwoot",
+  "version": "1.0.0",
+  "description": "A simplified Chatwoot deployment for Railway",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
