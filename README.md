@@ -1,12 +1,12 @@
-## 🚨 Note: This branch is unstable. For the stable branch's source code, please use the branch [3.x](https://github.com/chatwoot/chatwoot/tree/3.x)
+# Chatwoot
+
+Customer engagement suite, an open-source alternative to Intercom, Zendesk, Salesforce Service Cloud etc.
 
 
 <img src="https://user-images.githubusercontent.com/2246121/282256557-1570674b-d142-4198-9740-69404cc6a339.png#gh-light-mode-only" width="100%" alt="Chat dashboard dark mode"/>
 <img src="https://user-images.githubusercontent.com/2246121/282256632-87f6a01b-6467-4e0e-8a93-7bbf66d03a17.png#gh-dark-mode-only" width="100%" alt="Chat dashboard"/>
 
 ___
-
-# Chatwoot
 
 Customer engagement suite, an open-source alternative to Intercom, Zendesk, Salesforce Service Cloud etc.
 <p>
@@ -21,7 +21,18 @@ Customer engagement suite, an open-source alternative to Intercom, Zendesk, Sale
 <p>
   <a href="https://codeclimate.com/github/chatwoot/chatwoot/maintainability"><img src="https://api.codeclimate.com/v1/badges/e6e3f66332c91e5a4c0c/maintainability" alt="Maintainability"></a>
   <img src="https://img.shields.io/circleci/build/github/chatwoot/chatwoot" alt="CircleCI Badge">
-    <a href="https://hub.docker.com/r/chatwoot/chatwoot/"><img src="https://img.shields.io/docker/pulls/chatwoot/chatwoot" alt="Docker Pull Badge"></a>
+  <a href="https://hub.docker.com/r/chatwoot/chatwoot/"><img src="https://img.shields.io/docker/pulls/chatwoot/chatwoot" alt="Docker Pull Badge"></a>
+</p>
+
+## 🐳 Docker Images
+
+Chatwoot is available as Docker images on both Docker Hub and GitHub Container Registry (GHCR):
+
+- GHCR: `docker pull ghcr.io/mh8974/chatwoot:latest`
+
+## 🚂 Railway Deployment
+
+Chatwoot can be easily deployed on Railway using the provided configuration files. See [RAILWAY-DEPLOYMENT.md](RAILWAY-DEPLOYMENT.md) for detailed deployment instructions.
   <a href="https://hub.docker.com/r/chatwoot/chatwoot/"><img src="https://img.shields.io/docker/cloud/build/chatwoot/chatwoot" alt="Docker Build Badge"></a>
   <img src="https://img.shields.io/github/commit-activity/m/chatwoot/chatwoot" alt="Commits-per-month">
   <a title="Crowdin" target="_self" href="https://chatwoot.crowdin.com/chatwoot"><img src="https://badges.crowdin.net/e/37ced7eba411064bd792feb3b7a28b16/localized.svg"></a>
